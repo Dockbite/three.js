@@ -3666,7 +3666,11 @@
 
 			var canvas;
 
-			if ( image instanceof HTMLCanvasElement ) {
+			if ( image instanceof HTMLImageElement ) {
+
+				return image.src;
+
+      } else if ( image instanceof HTMLCanvasElement ) {
 
 				canvas = image;
 
