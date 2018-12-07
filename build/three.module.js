@@ -3664,7 +3664,7 @@ var ImageUtils = {
 
 		var canvas;
 
-		if ( typeof HTMLCanvasElement == 'undefined' ) {
+		if ( image instanceof HTMLImageElement || typeof HTMLCanvasElement == 'undefined' ) {
 
 			return image.src;
 
